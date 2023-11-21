@@ -1,1 +1,1 @@
-find . | sed 's/.*\///g' | sed 's/\.sh//g'
+find . -name "*.sh" | sed 's:.*/::' | sed 's/\.[^.]*$//'
